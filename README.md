@@ -11,9 +11,9 @@ Telegram бот для автоматической загрузки видео 
 
 ## Установка
 
-1. Клонируйте репозиторий:
+1. Клонируйте этот или ваш репозиторий, если вы отводили свою ветку:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/MustDie-green/tg-chat-cobalt-bot.git
 cd tg-chat-cobalt-bot
 ```
 
