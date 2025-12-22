@@ -22,7 +22,7 @@ COBALT_API_URL = os.getenv('COBALT_API_URL')
 
 def check_cobalt_health():
     try:
-        response = requests.get('http://cobalt:9000/', timeout=5)
+        response = requests.get(COBALT_API_URL.rstrip('/'), timeout=5)
         logger.info(f"Cobalt доступен, статус: {response.status_code}")
         return True
     except Exception as e:
