@@ -1,4 +1,4 @@
-# Telegram Cobalt Bot
+# Telegram cobalt.tools Bot
 
 Telegram бот для автоматической загрузки видео из Instagram Reels и X (Twitter) через cobalt-tools API.
 

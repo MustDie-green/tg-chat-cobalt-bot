@@ -224,8 +224,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         try:
             video_data = await download_video(url)
             if video_data:
-                await status_msg.delete()
+                await status_msg.edit_text("⏳ Отправляю видео...")
                 await send_video(update, context, video_data)
+                await status_msg.delete()
             else:
                 await status_msg.edit_text("❌ Не удалось загрузить видео")
         except Exception as e:
@@ -250,4 +251,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
